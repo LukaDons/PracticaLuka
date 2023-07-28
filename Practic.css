@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    background-color: grey;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1.3fr; 
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+header {
+    background-color: aquamarine;
+grid-area: header;
+display: grid;
+grid-template-rows: auto;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: 
+"btnUno logoHeader btnDos";
+}
+
+#logoHeader {
+    grid-area: logoHeader;
+}
+
+#botoneraUno {
+    grid-area: btnUno;
+}
+
+#botoneraUno a:hover {
+    color: rgb(224, 248, 10);
+}
+
+#botoneraDos {
+    grid-area: btnDos;
+    
+}
+
+
+#botoneraDos a:link {
+    color: rgb(7, 102, 31);
+}
+
+#botoneraDos a:hover {
+    color: rgb(206, 14, 14);
+}
+
+#botoneraDos a:visited {
+    color: rgb(139, 206, 14);
+}
+
+main {
+    background-color: rgb(255, 127, 223);
+grid-area: main;
+display: grid;
+grid-template-rows: auto;
+grid-template-columns: 1fr 3fr;
+grid-template-areas:
+"mainImg mainText"
+}
+
+#sectionText {
+    grid-area: mainText;
+}
+
+#sectionText::before {
+    content: "Soy gayyy";
+    color: blue;
+    position: relative;
+}
+
+#sectionText::after {
+    content: "Soy hetero";
+    color: rgb(6, 116, 6);
+}
+
+#sectionText:hover {
+    color: aqua;
+}
+
+#sectionImg {
+    grid-area: mainImg;
+}
+
+footer {
+    background-color: rgb(211, 192, 25);
+grid-area: footer;
+display: grid;
+}
+
+#botoneraFoot:link {
+    color: rgb(112, 7, 42);
+}
+
+.divColumnaUno {
+    background-color: rgb(255, 115, 0);
+}
+
+.divColumnaDos {
+    background-color: rgb(59, 9, 153);
+}
+
+.divColumnaTres {
+    background-color: rgb(235, 41, 7);
+}
