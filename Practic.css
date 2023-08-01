@@ -73,7 +73,7 @@ grid-template-areas:
 
 #sectionText::before {
     content: "Soy gayyy";
-    color: blue;
+    color: red;
     position: relative;
 }
 
